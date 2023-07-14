@@ -22,8 +22,8 @@
     export default defineComponent({
         data() {
             return {
-                firstname: 'Dave',
-                lastname: 'Webb',
+                firstname: 'James',
+                lastname: 'Bond',
                 languages: ['HTML', 'CSS', 'PHP', 'JS', 'Python']
             }
         },
@@ -33,6 +33,9 @@
             }
         },
         methods: {
+            presentation() {
+                return `${this.lastname}, ${this.firstname} ${this.lastname}.`;
+            },
             increment() {
                 this.count++
             }
@@ -52,6 +55,7 @@
     <header>
         <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
         <span>{{ publishedBooksMessage }}</span>
+        <p>{{ presentation() }}</p>
         <p>{{ firstname }} {{ lastname}} {{ languages.length >= 5 ? "est confirmé" : "est encore en apprentissage" }}.</p>
         <div class="wrapper">
             <HelloWorld msg="You did it!" />
