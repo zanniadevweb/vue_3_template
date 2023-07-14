@@ -93,9 +93,9 @@
         <span class="alert" :class="{ 'alert-big': isBig, 'alert-danger': isError }">
             Mauvais mot de passe
         </span>
-        <img v-bind:src="image.src" v-bind:alt="image.alt" v-for="image in images" :key="image.id">
+<!--        <img v-bind:src="image.src" v-bind:alt="image.alt" v-for="image in images" :key="image.id">
         <img src="{{ image.src }}" alt="{{ image.alt}}" v-for="image in images" :key="image.id">
-        <img src="image.src" alt="image.alt" v-for="image in images" :key="image.id">
+        <img src="image.src" alt="image.alt" v-for="image in images" :key="image.id">-->
         <ul>
             <li v-for="item in images" :key="item.id">...</li>
         </ul>
